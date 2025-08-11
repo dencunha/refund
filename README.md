@@ -34,13 +34,6 @@ O usuário informa o título da despesa, a categoria e o valor, e o sistema list
 ```bash
 .
 ├── assets/             # Imagens e ícones
-│   ├── Logo.svg
-│   ├── food.svg
-│   ├── hosting.svg
-│   ├── transportation.svg
-│   ├── services.svg
-│   ├── others.svg
-│   └── remove.svg
 ├── index.html          # Estrutura HTML
 ├── style.css           # Estilos da aplicação
 └── script.js           # Lógica em JavaScript
