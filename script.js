@@ -49,7 +49,7 @@ function expenseAdd(newExpense) {
         li.classList.add("expense")
 
         const img = document.createElement("img")
-        img.setAttribute("src", `/assets/${newExpense.category_id}.svg`)
+        img.setAttribute("src", `assets/${newExpense.category_id}.svg`)
         img.setAttribute("alt", newExpense.category_name)
 
         const div = document.createElement("div")
@@ -67,7 +67,7 @@ function expenseAdd(newExpense) {
  
         const removeIcon = document.createElement("img")
         removeIcon.classList.add("remove-icon")
-        removeIcon.setAttribute("src", `/assets/remove.svg`)
+        removeIcon.setAttribute("src", `assets/remove.svg`)
         removeIcon.setAttribute("alt", "Remover")
 
         div.append(strong, span)
