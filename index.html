@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refund</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <img src="/assets/Logo.svg" alt="Refund Logo" class="logo">
+
+        <section>
+            <form>
+                <header>
+                    <h1>Solicitação de reembolso</h1>
+                    <p>Informe os dados da despesa para solicitar reembolso. 
+                    A despesa será analisada e reembolsada em até 30 dias.</p>
+                </header>
+
+                <fieldset>
+                    <legend>TÍTULO DA DESPESA</legend>
+                    <input type="text" id="expense" name="expense" required>
+                </fieldset>
+
+                <div class="input-rows">
+                    <fieldset>
+                        <legend>CATEGORIA</legend>
+                        <select name="category" id="category" required>
+                            <option value="" selected disabled hidden>Selecione</option>
+                            <option value="food">Alimentção</option>
+                             <option value="hosting">Hospedagem</option>
+                            <option value="transportation">Transporte</option>
+                            <option value="services">Serviços</option>
+                            <option value="others">Outros</option>
+                        </select>
+                    </fieldset>
+
+                   <fieldset>
+                        <legend>VALOR</legend>
+                        <input type="text" id="amount" name="amount" required placeholder="R$ 0,00">
+                    </fieldset>
+                </div>
+
+                <button type="submit">Adicionar despesa</button>
+            </form>
+
+            <aside>
+                <header class="hd-aside">
+                    <p>
+                        Minhas solicitações <i>&bullet;</i>
+                        <span>0 DESPESAS</span>
+                    </p>
+                    <h2><small>R$</small>0,00</h2>
+                </header>
+
+                <ul>
+                    <!-- <li class="expense">
+                        <img src="/assets/food.svg" alt="ícone do tipo de despesa">
+                        <div class="expense-info">
+                            <strong>Almoço</strong>
+                            <span>Alimentação</span>
+                        </div>
+
+                        <span class="expense-amount"><small>R$</small>1.000,00</span>
+                        <img src="/assets/remove.svg" alt="ícone de remoção" class="remove-icon">
+                    </li> -->
+                </ul>
+            </aside>
+        </section>
+    </main>
+    <script src="/script.js"></script>
+</body>
+</html>
